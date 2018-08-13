@@ -4,77 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/transitions.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>Machu Picchu</title>
 </head>
 <body>
     <header class="hdr-class">
-        <div class="logo"><img src="images/machuPicchulogoXs.jpg" alt="Machu Picchu Logo" title="Machu Picchu Logo">
+        <div class="logo">
+            <img src="images/machuPicchulogoXs.jpg" alt="Machu Picchu Logo" title="Machu Picchu Logo" />
             <h1>Explore Machu Picchu</h1>
         </div>
     </header>
     
-    <nav class="navbar">
-        <a class="a-top-menu" href="index.html">Home</a>
-        <a class="a-top-menu" href="pages/history.html">History</a>
-        <a class="a-top-menu" href="pages/landmarks.html">Landmarks</a>
-        <a class="a-top-menu" href="pages/gettingThere.html">Getting There</a>
-        <a class="a-top-menu" href="pages/aboutUs.html">About Us</a>
-        <a class="a-top-menu" href="pages/contactUs.html">Contact Us</a>
+    <nav class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="pages/gettingThere.html">Getting There</a>
+        <a href="pages/aboutUs.html">About Us</a>
+        <a href="pages/contactUs.html">Contact Us</a>
     </nav>
 
-    <section class="panoramic-section-class">
-        <figure>
-            <img class="panoramic-img-class" 
-                 src="images/machu-picchu-panorama.jpg"
-                 alt="Machu picchu panoramic view"
-                 title="Machu Picchu panoramic view"
-            />
-        </figure>
-    </section>
-    <main>
-     <a class="weatherwidget-io" href="https://forecast7.com/en/n13d15n72d53/aguas-calientes/?unit=us" data-label_1="MACHUPICCHU" data-label_2="WEATHER" data-font="Roboto" data-theme="sky" >MACHUPICCHU WEATHER</a>
+    <div>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/n13d15n72d53/aguas-calientes/?unit=us" data-label_1="MACHUPICCHU" data-label_2="WEATHER" data-font="Roboto" data-theme="sky" >MACHUPICCHU WEATHER</a>
     <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
+    </div>
 
-<!--Clickable map, option 1-->
+    <img class="bigImageStyle" src="images/mpAttractionsMap.jpg" alt="Machu Picchu Attractions" title="Machu Picchu Attractions">
 
-    <h2>
-    Click on a number to see more photos.
-    </h2>
-    
-    <figure>
-        <img id="mpAttractions"
-        src="images/mpAttractionsMap1.jpg"
-        alt="Machu Picchu Attractions Map"
-        title="Machu Picchu Clickable Attractions Map"/>
-
-<!--Clickable map, option 2-->
-
-    <h2>
-    Click on a number to see more photos.
-    </h2>
-    
-    <figure>
-        <img id="mpMapWithLandmarks"
-        src="images/mpMap1.gif"
-        alt="Machu Picchu Map"
-        title="Machu Picchu Map"/>
-    </figure>
-        <img class="mpNusta'sBedroom"
-        src="images/mpNustaBedroom1.jpg"
-        alt="Machu Picchu Nusta's Bedroom Photo1"
-        title="Machu Picchu Nusta's Bedroom Photo1"
-    <figure>
+<main>
+    <div class="gallery-parent">
         
-    </figure>
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpMainStairs.jpg" alt="Machu Picchu Main Stairs" title="Main Stairs">
+            <div>
+                <figcaption class="attractionName">Main Stairs (Escalera Principal)</figcaption>
+                <figcaption class="attractionDesc">The stairs to reach Machu Picchu, perched at 2,450 meters above sea level, on a ridge in the Andes, to more than 200 structures constructed of stone.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="portrait">
+            <img class="imageSize" src="images/mpCityGate.jpg" alt="Machu Picchu City Gate" title="City Gate">
+            <div>
+            <figcaption class="attractionName">City Gate (Puerta Principal)</figcaption>
+            <figcaption class="attractionDesc">The entrance to the Machu Picchu citadel.  Ashlar masonry, the technique of fitting stones without mortar, is evident in this structure as is in buildings throughout the city.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpQuarry.jpg" alt="Machu Picchu Quarry" title="Quarry">
+            <div>
+                <figcaption class="attractionName">Quarry (Cantera)</figcaption>
+                <figcaption class="attractionDesc">Littered with cut granite and located between the Sacred Plaza and the Temple of the Sun, the quarry was likely the stonecutters' workshop.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpSacredPlaza.jpg" alt="Machu Picchu Sacred Plaza" title="Sacred Plaza">
+            <div>
+                <figcaption class="attractionName">Sacred Plaza (Plaza Sagrada)</figcaption>
+                <figcaption class="attractionDesc">Situated on an elevated plane on the western side of the Main Plaza.  The Main Temple, Temple of Three Windows, and the Priests' House surround the Plaza.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpMainTemple.jpg" alt="Machu Picchu Main Temple" title="Main Temple">
+            <div>
+                <figcaption class="attractionName">Main Temple (Templo Principal)</figcaption>
+                <figcaption class="attractionDesc">Thus named because of its large size and prominent location on the Sacred Plaza.  Believed to be the temple for the most significant ceremonies.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpTempleofThreeWindows.JPG" alt="Machu Picchu Temple of Three Windows" title="Temple of Three Windows">
+            <div>
+                <figcaption class="attractionName">Temple of Three Widows (Templo de los Sacerdotes)</figcaption>
+                <figcaption class="attractionDesc">Adjacent to the Main Tempel and located on the Sacred Plaza.  Three trapezoidal windows look east and frame the Andes.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpIntihuatana.jpg" alt="Machu Picchu Intihuatana" title="Main Temple">
+            <div>
+                <figcaption class="attractionName">Intihuatana (Ritual Stone)</figcaption>
+                <figcaption class="attractionDesc">A sacred pillar atopa pyramid shaped peak located at the highest point in the center of the city.  The pillar's four sides align with four highest mountain peaks surrounding Machu Picchu and with cardinal directions.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpSacredRock.jpg" alt="Machu Picchu Sacred Rock" title="Sacred Rock">
+            <div>
+                <figcaption class="attractionName">Sacred Rock (Piedra Sagrada)</figcaption>
+                <figcaption class="attractionDesc">Situated in a clearing near the base of Huayna Picchu, the Sacred Rock's shape mimics the outline of Mount Putucusi which looms behind it, when looking northeast.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpMainSquare.jpg" alt="Machu Picchu Main Square" title="Main Square">
+            <div>
+                <figcaption class="attractionName">Main Square (Plaza Principal)</figcaption>
+                <figcaption class="attractionDesc">The expanse of elongated space separates the eastern section, which was likely residential, and the western section, used for religious and ceremonial functions.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpTempleofCondor.jpg" alt="Machu Picchu Temple of Cóndor" title="Temple of Cóndor">
+            <div>
+                <figcaption class="attractionName">Temple of Cóndor (Templo del Cóndor)</figcaption>
+                <figcaption class="attractionDesc">A bas-relief in granite carved as a condor's head and neck feathers lie on the ground with adjacent, vertical rock formations resembling outspread wings present the bird in flight.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpTempleoftheSun.jpg" alt="Machu Picchu Temple of the Sun" title="Temple of the Sun">
+            <div>
+                <figcaption class="attractionName">Temple of the Sun (Torreón)</figcaption>
+                <figcaption class="attractionDesc">Semicircular with two trapezoidal windows and built atop the granite rock overlying the Royal Tomb.  Possibly an astrological observatory and a place of religious rite with sacrificial offerings.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpRoyalTomb.jpg" alt="Machu Picchu Royal Tomb" title="Royal Tomb">
+            <div>
+                <figcaption class="attractionName">Royal Tomb (Mausoleo Real)</figcaption>
+                <figcaption class="attractionDesc">Carved into a natural cave, the Royal Tomb serves as the foundation of the Temple of the Sun which is built above.  Despite its name, the function of the structure is unknown.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpNustaBedroom.jpg" alt="Machu Picchu Ñusta's Bedroom" title="Ñusta's Bedroom">
+            <div>
+                <figcaption class="attractionName">Princess's Bedroom (Casa de la Ñusta)</figcaption>
+                <figcaption class="attractionDesc">Situated in the area for royalty and adjacent to the Temple of the Sun, the houses of the ñustas, Incan virgin princesses, feature trapezoid-shaped rooms.</figcaption>
+            </div>
+        </figure>
+    
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpAqueduct.jpg" alt="Machu Picchu Aqueduct" title="Aqueduct">
+            <div>
+                <figcaption class="attractionName">Aqueduct (Aqueductos)</figcaption>
+                <figcaption class="attractionDesc">Ingeniously engineered to maximize yield by routing spring water sourced from melting snow, life would not have been sustsainable without the aqueducts.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpFountains.jpg" alt="Machu Picchu Fountains" title="Main Temple">
+            <div>
+                <figcaption class="attractionName">Fountains (Fuentes)</figcaption>
+                <figcaption class="attractionDesc">Sixteen fountains are fed by the aqueducts and served as a water source for residents and as places of worship and religious rites.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpFactoryHouses.jpg" alt="Machu Picchu Factory Houses" title="Factory Houses">
+            <div>
+                <figcaption class="attractionName">Factory Houses</figcaption>
+                <figcaption class="attractionDesc">Also known as the Industrial Sector, these buildings located to the east of the Main Plaza and on a lower elevation are believed to have been used for producing goods such as pottery and fabric.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="portrait">
+            <img class="imageSize" src="images/mpMortarDistrict.jpg" alt="Machu Picchu Mortar District" title="Mortar District">
+            <div>
+                <figcaption class="attractionName">Mortar District</figcaption>
+                <figcaption class="attractionDesc">The function of these carved stone circles in unknown.  Some archaeologists have theorized that they are mortars used to grind plants to make dyes for fabric.  Others have suggested that these are water basins serving as mirrors for making astronomical observations of the moon.</figcaption>
+            </div>
+        </figure>
+       
+        <figure class="portrait">
+            <img class="imageSize" src="images/mpTempleoftheMoon.jpg" alt="Huayna Picchu Temple of the Moon" title="Temple of the Moon">
+            <div>
+                <figcaption class="attractionName">Temple of the Moon</figcaption>
+                <figcaption class="attractionDesc">Carved into the north side of Huayna Picchu, the Temple is made up of masonry tucked into a complex of shallow caves.</figcaption>
+            </div>
+        </figure>       
+       
+       <figure class="landscape">
+            <img class="imageSize" src="images/mpHuaynaPicchu.jpg" alt="Huayna Picchu" title="Huayna Picchu">
+            <div>
+                <figcaption class="attractionName">Huayna Picchu (Young Peak)</figcaption>
+                <figcaption class="attractionDesc">Rising 679 feet above the city, the peak offers unparalleled view of Machu Picchu.  Only the first 400 visitors are granted permission to climb.</figcaption>
+            </div>
+        </figure>
+        
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpHuaynaPicchuSummit.jpg" alt="Huayna Picchu Summit" title="Huayna Picchu Summit">
+            <div>
+                <figcaption class="attractionName">Summit of Huayna Picchu (Young Peak)</figcaption>
+                <figcaption class="attractionDesc">The easy-to-miss Temple of the Moon, built directly into the mountain rocks of Huayna Picchu, features some of the finest Incan stonework.</figcaption>
+            </div>
+        </figure>
+       
+        <figure class="landscape">
+            <img class="imageSize" src="images/mpTerraces.jpg" alt="Machu Picchu Terraces" title="Terraces">
+            <div>
+                <figcaption class="attractionName">Terraces</figcaption>
+                <figcaption class="attractionDesc">Comprising of 12 acres, the hundreds of man-made terraces were used to drain 76 inches of average annual rainfall and to farm corn and potatoes.</figcaption>
+            </div>
+        </figure>
+        
+    </div>
+</main>    
 
-
-    </main>
     <footer>
     <p>&copy: 2018 Machu Picchu Explorers Group</p>
     <p>All Rights Reserved</p>
+    
     </footer>
 
 </body>  

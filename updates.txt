@@ -1,8 +1,0 @@
-This file is designed to hold information about updates that one is making, 
-or has made, to the application
-
-1) Added z-index:1 property to .navbar class in style.css to ensure the 
-menu bar remains visible when the weather widget scrolls up past the top of the screen
-KH-07/28
-
-2) Added a test css file named transitiontest.css - KH 07/29
